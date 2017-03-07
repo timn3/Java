@@ -1,18 +1,18 @@
-	import java.io.*;
+import java.io.*;
 		
 public class Calc {
 	public static void currencyCalcDollar(double userInputAmount) {
 		double output = userInputAmount * 1.065;
 		output = Math.round(output * 100);
 		output = output/100;
-		System.out.printf(userInputAmount + "€ is equal to " + output + "$\n"); //1.065
+		System.out.printf(userInputAmount + "â‚¬ is equal to " + output + "$\n"); //1.065
 	}
 
 	public static void currencyCalcYen(double userInputAmount) {
 		double output = userInputAmount * 119.805;
 		output = Math.round(output * 100);
 		output = output/100;
-		System.out.printf(userInputAmount + "€ is equal to " + output + "¥\n"); //119.805
+		System.out.printf(userInputAmount + "â‚¬ is equal to " + output + "Â¥\n"); //119.805
 	}
 	
 	public static void main(String[] args) throws IOException {
@@ -34,7 +34,7 @@ public class Calc {
 		switch (userInputCurrency) {
 		case "dollar": case "Dollar": case "$": currencyCalcDollar(userInputAmount);
 		break;
-		case "yen": case "Yen": case "¥": currencyCalcYen(userInputAmount);
+		case "yen": case "Yen": case "Â¥": currencyCalcYen(userInputAmount);
 		break;
 		default: System.out.println("this is not a currency");
 		break;
