@@ -57,4 +57,16 @@ public class Console {
     String read = sc.nextLine();
     return read;
   }
+
+  public static char[] readCharSequence() {
+    Scanner sc = new Scanner(System.in);
+    String read = sc.nextLine();
+    int l = read.length();
+    char[] c = new char[l];
+
+    for (int i = 0; i < l; i++) {
+      c[i] = read.charAt(i);
+    }
+    return c;
+  }
 }
